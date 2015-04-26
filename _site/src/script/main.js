@@ -1,29 +1,19 @@
-console.log("Nice, you have passed your first test.")
+var linha1 = "                            )  "
+, linha2 = "           *   )         ( /(  "
+, linha3 = " (   (   ` )  /(   (     )\()) "
+, linha4 = " )\  )\   ( )(_))  )\   ((_)\  "
+, linha5 = "((_)((_) (_(_())  ((_)  __((_) "
+, linha6 = "\\ \\ / /  |_   _|  | __| \\ \\/ / "
+, linha7 = " \\ \V /     | |    | _|   >  <  "
+, linha8 = "  \\_/      |_|    |___| /_/\\_\\ "
+, linha9 = "                               ";
 
 
+var fire = 'color: red;'
 
+console.log('%c ' + linha1 + '\n' + linha2 + '\n' + linha3 + '\n' + linha4 + '\n' + linha5 + '%c' + '\n' + linha6 + '\n' + linha7 + '\n' + linha8 + '\n' + linha9, fire, 'color: blue')
 
-
-var unique = require('uniq');
-
-var data = [1, 2, 2, 3, 4, 5, 5, 5, 6];
-
-console.log(unique(data));
-
-
-
-
-
-var React = require('react')
-
-var Hello = React.createClass({
-
-  render: function() {
-    return <div>Hello, {this.props.name}!</div>
-  }
-})
-
-React.render(
-  <Hello name="World" />,
-  document.getElementById('hello')
-)
+console.log("Nice, you have passed your first test. We love curious people so we love you already!")
+console.log("Since you have found our easter egg, we would like to provide you something to get one step ahead of your competitors!")
+console.log("When you apply for the job, write the following text as the first line of your summary: %cI like blue bananas", "font-weight: bold;")
+console.log("This page was coded by a Designer (a really nice one). So don't cha be all judgy and stuff.")
