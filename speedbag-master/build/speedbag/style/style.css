@@ -1,0 +1,490 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: transparent;
+}
+/* Custom container */
+.container-narrow {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 60px 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+@media screen and (max-width: 1000px) {
+  #topbar h3 {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #topbar h3 {
+    margin-left: 90px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #topbar h3 {
+    margin-left: 0px;
+  }
+}
+.v-clean-btn {
+  background-color: transparent;
+  border: none;
+}
+.v-no-outlines:active,
+.v-no-outlines:focus {
+  outline: none;
+}
+.v-unselectable {
+  /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+  /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+  -moz-user-select: none;
+  /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* From IE10 only */
+  user-select: none;
+  /* Not valid CSS yet, as of July 2012 */
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none;
+}
+body {
+  padding: 0;
+}
+h1 {
+  font-family: 'Lato';
+  text-align: center;
+}
+h2 {
+  font-family: 'Lato';
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 400;
+  color: #153243;
+}
+h3 {
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: 300;
+  color: #EDAF97;
+}
+p {
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 300;
+  color: #153243;
+}
+.row {
+  margin: 0;
+}
+.header {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+.header-brand {
+  position: relative;
+  margin: 0;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 400;
+}
+.v-dream__product {
+  margin-bottom: 2em;
+}
+.v-dream__product__photo-caroussel {
+  max-width: 100%;
+  overflow: hidden;
+}
+.v-dream__product__photo-caroussel img {
+  float: center;
+}
+.product-photo {
+  max-width: 65%;
+  margin-left: 17.5%;
+}
+.product-title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-style: normal;
+  text-align: left;
+}
+.product-price {
+  margin-top: 5px;
+  font-weight: 900;
+  color: #75CCB1;
+}
+.v-dream__selector-row {
+  margin-top: 1.5em;
+}
+.v-dream__selector__title {
+  font-size: 18px;
+  font-style: italic;
+  color: #153243;
+}
+.v-dream__size-selector {
+  background-color: transparent;
+  border: none;
+  /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+  /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+  -moz-user-select: none;
+  /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* From IE10 only */
+  user-select: none;
+  /* Not valid CSS yet, as of July 2012 */
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none;
+  border: 2px solid #153243;
+  border-radius: 50%;
+  color: #153243;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 40px;
+  padding: 0px;
+  width: 40px;
+}
+.v-dream__size-selector:active,
+.v-dream__size-selector:focus {
+  outline: none;
+}
+.v-dream__size-selector:active {
+  background-color: #153243;
+  color: #fff;
+}
+.v-dream__size-selector--unavailable {
+  background-color: transparent;
+  border: none;
+  /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+  /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+  -moz-user-select: none;
+  /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* From IE10 only */
+  user-select: none;
+  /* Not valid CSS yet, as of July 2012 */
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none;
+  border: 2px solid #153243;
+  border-radius: 50%;
+  color: #153243;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 40px;
+  padding: 0px;
+  width: 40px;
+  border: 2px solid #999999;
+  color: #999999;
+}
+.v-dream__size-selector--unavailable:active,
+.v-dream__size-selector--unavailable:focus {
+  outline: none;
+}
+.v-dream__color-selector {
+  background-color: transparent;
+  border: none;
+  /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+  /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+  -moz-user-select: none;
+  /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* From IE10 only */
+  user-select: none;
+  /* Not valid CSS yet, as of July 2012 */
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none;
+  border: 2px solid #153243;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 0px;
+  height: 40px;
+  width: 40px;
+  transition: box-shadow 0.25s;
+}
+.v-dream__color-selector:active,
+.v-dream__color-selector:focus {
+  outline: none;
+}
+.v-dream__color-selector:nth-child(1) {
+  background-color: #153243;
+}
+.v-dream__color-selector:nth-child(2) {
+  background-color: #fff;
+}
+.v-dream__color-selector:nth-child(3) {
+  background-color: #000;
+}
+.v-dream__color-selector:active {
+  box-shadow: inset 0px 0px 0px 8px #e6e6e6;
+  transition: box-shadow 0.25s, border-color 0.25s;
+}
+.v-dream__checkout-wrapper {
+  margin-top: 1.5em;
+}
+.v-dream__checkout-button {
+  background-color: transparent;
+  border: none;
+  /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+  /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+  -moz-user-select: none;
+  /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* From IE10 only */
+  user-select: none;
+  /* Not valid CSS yet, as of July 2012 */
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none;
+  background: #75CCB1;
+  box-shadow: 2px 2px 0px 0px #57c1a0;
+  color: #fff;
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 1.35em;
+  font-weight: 500;
+  padding: 12.5px;
+  width: 100%;
+}
+.v-dream__checkout-button:active,
+.v-dream__checkout-button:focus {
+  outline: none;
+}
+.v-dream__checkout-button:active {
+  box-shadow: none;
+  margin: 2px 0px -2px 2px;
+}
+.v-dream__product-description {
+  margin: 1.5em 0.75em 1.5em 0.75em;
+}
+.v-dream__product-description__title {
+  color: #F9AC98;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+.main-footer {
+  padding: 0 15px;
+  background-color: #153243;
+}
+.footer-menu {
+  padding-top: 20px;
+}
+.footer-menu p {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.address {
+  padding-top: 15px;
+}
+.address p {
+  font-size: 12px;
+  color: #fff;
+}
+.social-icons {
+  padding-top: 20px;
+}
+.social-icons svg {
+  margin-bottom: 10px;
+}
+body {
+  padding: 0;
+}
+h1 {
+  font-family: 'Lato';
+  text-align: center;
+}
+h2 {
+  font-family: 'Lato';
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 400;
+  color: #153243;
+  text-align: center;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: 300;
+  color: #EDAF97;
+}
+p {
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 300;
+  color: #153243;
+}
+.icon {
+  fill: #153243;
+}
+.header {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+.header-brand {
+  position: relative;
+  margin: 0;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 400;
+}
+.banner {
+  max-width: 100%;
+}
+.banner-image {
+  max-width: 100%;
+}
+.featured-product {
+  margin-top: 30px;
+}
+.featured-product-photo {
+  width: 167px;
+  height: 235px;
+}
+.arrow {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 170px;
+}
+.product-title-shelf {
+  padding-top: 5px;
+  margin: 0;
+}
+.product-price-shelf {
+  font-size: 14px;
+  font-weight: 600;
+  color: #75CCB1;
+}
+.btn {
+  width: 167px;
+  height: 35px;
+  margin-bottom: 30px;
+  background-color: #75CCB1;
+  border: none;
+  border-radius: 9px;
+}
+.btn p {
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+}
+.promotion-product {
+  margin-top: 20px;
+}
+.promotion-product-photo {
+  width: 167px;
+  height: 235px;
+}
+.promotion-arrow {
+  position: relative;
+  padding-top: 110px;
+}
+.policie h3 {
+  margin-top: 30px;
+}
+.policie svg {
+  margin-top: 30px;
+}
+.policie-description p {
+  padding-top: 7px;
+  font-size: 14px;
+}
+.newsletter {
+  height: 50px;
+  margin-top: 50px;
+  background-color: #EDAF97;
+}
+.newsletter p {
+  padding-top: 6px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 13px;
+}
+.newsletter .btn {
+  width: auto;
+  height: 30px;
+  background-color: #153243;
+  border: none;
+  border-radius: 9px;
+}
+.newsletter .btn p {
+  padding-top: 3px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+.newsletter-form {
+  padding-top: 9px;
+}
+.newsletter-form input {
+  height: 30px;
+  border: none;
+  border-radius: 9px;
+}
+.newsletter-form button {
+  margin-bottom: 0;
+}
+.footer {
+  background-color: #153243;
+}
+.footer-menu {
+  padding-top: 20px;
+}
+.footer-menu p {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+}
+.address {
+  padding-top: 15px;
+}
+.address p {
+  font-size: 12px;
+  color: #fff;
+}
+.social-icons {
+  padding-top: 20px;
+}
+.social-icons svg {
+  margin-bottom: 10px;
+}
