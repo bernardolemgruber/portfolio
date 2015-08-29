@@ -6,10 +6,15 @@ module.exports = (grunt) ->
   config = GruntVTEX.generateConfig grunt, pkg,
     open: 'http://basedevmkp.vtexlocal.com.br/tortin/'
 
-  config['gh-pages'] = 
+  config['gh-pages'] =
     options:
-      base: 'build/<%= relativePath %>'
+      base: 'build/<%= relativePath %>/'
     src: ['**']
+
+  config.copy.main.files.push({
+    src: ['CNAME']
+    dest: "build/<%= relativePath %>/"
+  })
 
   tasks =
     build: ['clean', 'copy:main', 'copy:pkg', 'less']
