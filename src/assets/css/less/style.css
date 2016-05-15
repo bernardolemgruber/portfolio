@@ -22,6 +22,111 @@
     border-radius: 0;
   }
 }
-h1 {
-  color: pink;
+@font-face {
+  font-family: "Butler";
+  src: url("/assets/font/Butler_Regular.otf") format('opentype'), url('assets/font/Butler_Bold.otf') format('opentype'), url('assets/font/Butler_Ultra_Light.otf') format('opentype');
+}
+.underline {
+  border-bottom: 1px solid #FFF;
+}
+body {
+  font-size: 20px;
+  font-family: "Butler", sans-serif;
+  background-color: #610B75;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #FFF;
+}
+.text-area {
+  background-color: #610B75;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  margin-top: 10%;
+}
+.text-area p {
+  font-size: 1.5em;
+  align-self: center;
+}
+.text-area h1 {
+  font-size: 3.0em;
+  margin-bottom: 70px;
+}
+.text-area a {
+  color: #FFF;
+  text-decoration: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+div.foo {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.letter {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 8em;
+  margin: 0.2em;
+  position: relative;
+  color: #610B75;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before,
+.letter:after {
+  position: absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top: 0;
+  left: 0;
+}
+.letter,
+.letter:before,
+.letter:after {
+  transition: all 0.3s ease-in-out;
+}
+.letter:before {
+  color: #fff;
+  text-shadow: -1px 0px 1px rgba(255, 255, 255, 0.8), 1px 0px 1px rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+}
+.letter:after {
+  color: rgba(0, 0, 0, 0.11);
+  z-index: 2;
+  transform: scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+}
+.letter:hover:before {
+  color: #fafafa;
+  transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+}
+.letter:hover:after {
+  transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .text-area {
+    height: 60%;
+    margin-top: 0;
+  }
+  .text-area h1 {
+    font-size: 3.5em;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .text-area h1 {
+    text-align: center;
+  }
 }

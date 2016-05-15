@@ -2,111 +2,42 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Pink - A simple front-end boilerplate for Interaction Designers and Developers.</title>
+    <title>Bernardo Lemgruber</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A simple front-end boilerplate for Interaction Designers and Developers.">
+    <meta name="description" content="Maker, designer, creator and dreamer.">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
 
     <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="assets/css/sass/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/less/style.css" media="screen" title="no title" charset="utf-8">
+
+    <!-- <link rel="font" href="assets/font/Butler_Ultra_Light.otf" media="screen" title="no title" charset="utf-8"> -->
+
 
     <script src="assets/libs/angular.min.js"></script>
     <script src="assets/js/app.js"></script>
   </head>
   <body ng-app="pinkModule">
 
-    <main class="main container" role="main">
-      <h1>Pink</h1>
-      <p>
-        A simple front-end boilerplate for Interaction Designers and Developers.
-      </p>
+    <main class="main" role="main">
 
-      <h2>Features</h2>
-      <p>
-        The main features of Pink:
-      </p>
-      <ul>
-        <li>Local server</li>
-        <li>Less and Sass autocompile</li>
-        <li>Bootstrap Less files included for customization</li>
-        <li>Livereload for any files changes</li>
-        <li><a href="https://github.com/vtex-apps/css-utils">VTEX CSS Utils</a> styleguide FTW</li>
-        <li><em>Build</em> command for publishing filtered files</li>
-        <li>Front-end development frameworks included: jQuery, AngularJS, React, Underscore</li>
-      </ul>
-
-      <h2>How it works</h2>
-      <p>
-        When you run <code>grunt</code>, Pink starts a server at <a href="http://localhost:8080/">http://localhost:8080/</a>, compiles <code>style.less</code> and <code>style.scss</code> files and begin watching changes in all files inside <code>assets</code> folder. Any change will reload the page or just reload css files, in case of style changes.
-      </p>
-      <p>
-        When you run <code>grunt build</code>, Pink makes a copy of <code>src</code> folder to <code>build</code> and removes <code>.less</code> and <code>.scss</code> files from the last one.
-      </p>
-      <p>
-        When you run <code>grunt dist</code>, Pink runs a <code>build</code> and publish it's content to <code>gh-pages</code> branch.
-      </p>
-
-      <h2>Dependencies</h2>
-      <ol>
-        <li><a href="http://nodejs.org/download">Node.js</a></li>
-        <li>Grunt: run <code>sudo npm i -g grunt-cli</code></li>
-        <li><a href="http://sass-lang.com/install">Sass</a></li>
-      </ol>
-
-      <h2>Installation</h2>
-      <ol>
-        <li>Download or clone Pink</li>
-        <li>Install NPM dependencies: run <code>npm i</code></li>
-      </ol>
-
-      <h2>Hands on!</h2>
-
-      <h3>Running Pink</h3>
-      <ol>
-        <li>Run <code>grunt</code></li>
-        <li>Go to <a href="http://localhost:8080/">http://localhost:8080/</a></li>
-      </ol>
-
-      <h3>Generating a new bootstrap.css file</h3>
-      <p>
-        If you make changes on bootstrap.less file, you'll need to run this:
-      </p>
-      <p>
-        <pre>grunt less:bootstrap</pre>
-      </p>
-
-      <h3>Generating a Build folder</h3>
-      <p>
-        <pre>grunt build</pre>
-      </p>
-
-      <h3>Publishing to gh-pages branch</h3>
-      <p>
-        <pre>grunt dist</pre>
-      </p>
-
-      <h2>Bonus: some AngularJS examples</h2>
-
-      <div ng-include="'partials/partial.html'"></div>
-
-      <div ng-controller="bandController">
-        <h3>ngRepeat</h3>
-        <p>
-          It's a list made using <strong>ngRepeat</strong> directive. Based on a <a href="assets/data/band.json">JSON file</a>, you can list items of an array.
-        </p>
-
-        <h4>Pink Floyd members</h4>
-        <ul>
-          <li ng-repeat="member in band">
-            <strong>{{ member.name }}</strong> - {{ member.instruments }} ({{ member.years }})
-          </li>
-        </ul>
+      <div class="foo">
+        <span class="letter" data-letter="H">H</span>
+        <span class="letter" data-letter="I">I</span>
       </div>
+
     </main>
+
+    <div class="text-area">
+      <h1 class="container">My name is <br>Bernardo Lemgruber</h1>
+      <p class="container col-xs-12 col-sm-10 col-md-8 col-lg-6">I’m a Rio-based designer,
+      working with technology at an e-commerce software company called VTEX.
+      You can find me on <a class="underline" href="https://twitter.com/blemgruber">Twitter</a>, see how I see on <a  class="underline" href="https://www.instagram.com/bernardolemgruber/">Instagram</a>, read me on <a class="underline" href="https://medium.com/@blemgruber">Medium</a> and hire me on <a class="underline" href="https://www.linkedin.com/in/bernardolemgruber">Linkedin</a>.
+      </p>
+    </div>
 
     <script src="assets/libs/jquery-1.12.3.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script>
