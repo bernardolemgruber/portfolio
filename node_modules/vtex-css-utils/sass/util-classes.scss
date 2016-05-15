@@ -1,0 +1,39 @@
+@import "variables";
+
+%css-utils-clean-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+
+%css-utils-no-outlines {
+  @media only screen and (max-device-width: 768px) {
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+}
+
+%css-utils-clean-list {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+%css-utils-clean-input {
+  background-color: white;
+  border: none;
+}
+
+%css-utils-unselectable {
+   /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+   /* Check this site for more details: http://help%dottoro%com/lhwdpnva%php */
+   -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+   -webkit-user-select: none;
+   -ms-user-select: none; /* From IE10 only */
+   user-select: none; /* Not valid CSS yet, as of July 2012 */
+
+   -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+   user-drag: none;
+}
